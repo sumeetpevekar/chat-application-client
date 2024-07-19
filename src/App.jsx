@@ -4,7 +4,7 @@ import { IoMdSend } from "react-icons/io";
 import styles from "./App.module.css";
 
 const App = () => {
-  const socket = useMemo(() => io("http://localhost:3000"), []);
+  const socket = useMemo(() => io("https://chat-application-api-wheat.vercel.app"), []);
 
   const [message, setMessage] = useState("");
   const [socketId, setSocketId] = useState("");
